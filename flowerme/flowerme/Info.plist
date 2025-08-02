@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+
+    <!-- ✅ Firebase 설정 자동 처리 -->
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <true/>
+
+    <!-- ✅ URL Scheme 설정 (Google, Kakao, Naver 로그인 대응) -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <!-- ✅ Google 로그인 -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.581441520857-v0t8s78lbi46ols601c9sisp1la4aap1</string>
+            </array>
+        </dict>
+
+        <!-- ✅ Naver 로그인 -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>naver2TGw2d7j1JuLqW5tqmBj</string>
+            </array>
+        </dict>
+
+        <!-- ✅ Kakao 로그인 -->
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>kakao64d3f83ae4d3f79f54ed7dc9dda85a08</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- ✅ Kakao SDK 필요 항목 -->
+    <key>KAKAO_APP_KEY</key>
+    <string>64d3f83ae4d3f79f54ed7dc9dda85a08</string>
+
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>kakaokompassauth</string>
+        <string>kakaolink</string>
+    </array>
+
+    <!-- ✅ 위치 권한 -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>이 앱은 주변 사용자에게 꽃을 보내기 위해 위치 권한이 필요합니다.</string>
+
+    <!-- ✅ 카메라 권한 -->
+    <key>NSCameraUsageDescription</key>
+    <string>카메라 사용 권한이 필요합니다.</string>
+
+    <!-- ✅ 사진 보관함 권한 -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>사진 보관함 접근 권한이 필요합니다.</string>
+
+</dict>
+</plist>
